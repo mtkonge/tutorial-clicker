@@ -13,8 +13,8 @@ function main() {
         document.querySelector<HTMLButtonElement>("#next-button")!;
     nextButton.addEventListener("click", () => {
         tutorialPoints++;
-        const randomTop = getRandomNumber(0, window.innerWidth / 2);
-        const randomLeft = getRandomNumber(0, window.innerHeight / 2);
+        const randomTop = getRandomNumber(10, window.innerHeight - 210);
+        const randomLeft = getRandomNumber(10, window.innerWidth - 310);
         tutorialContainer.style.top = randomTop + "px";
         tutorialContainer.style.left = randomLeft + "px";
     });
